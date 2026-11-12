@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Our Little World – Krushi × Manthan 🖤❤️</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500&display=swap">
+<style>
+:root{--k:#080808;--b:#35000C;--r:#E50935;--g:#FF405C;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{height:100%;margin:0;background:#080808;color:#fff;font-family:Poppins,system-ui,sans-serif;font-weight:300}
+*{box-sizing:border-box}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.scr{position:fixed;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px 90px;overflow-y:auto;text-align:center;background:radial-gradient(circle at 50% 0,#35000C,#080808 70%);z-index:1}
+.scr.on{display:flex;animation:fi 1s}
+@keyframes fi{from{opacity:0;filter:brightness(.2)}}
+h1,h2{font-family:'Playfair Display',serif;margin:.3em 0;text-shadow:0 0 22px var(--r)}
+h1{font-size:clamp(1.7rem,6vw,3rem)}h2{font-size:clamp(1.4rem,5vw,2.2rem)}
+.script{font-family:'Dancing Script',cursive;font-size:clamp(1.2rem,4.5vw,1.7rem);line-height:1.55}
+.glass{background:rgba(255,255,255,.07);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,64,92,.35);border-radius:22px;padding:22px;max-width:640px;width:100%;box-shadow:0 0 40px rgba(229,9,53,.25);animation:rise .9s both}
+@keyframes rise{from{opacity:0;transform:translateY(30px) scale(.96)}}
+.glass p{line-height:1.8;margin:.8em 0;text-align:left;font-size:1.02rem}
+button,.btn{font:500 1rem Poppins,sans-serif;color:#fff;background:linear-gradient(135deg,var(--r),#a00028);border:0;border-radius:40px;padding:13px 26px;margin:8px 5px;cursor:pointer;box-shadow:0 0 22px rgba(229,9,53,.55);transition:.25s;touch-action:manipulation}
+button:hover{transform:scale(1.06);box-shadow:0 0 34px var(--g)}
+button.ghost{background:transparent;border:1px solid var(--g);box-shadow:none}
+input[type=text]{font:1.1rem Poppins;text-align:center;color:#fff;background:rgba(255,255,255,.08);border:1px solid var(--g);border-radius:40px;padding:13px 20px;width:min(300px,85vw);outline:0}
+.pulse{animation:pl 1.8s infinite}@keyframes pl{50%{transform:scale(1.07);box-shadow:0 0 40px var(--g)}}
+.shake{animation:sh .4s}@keyframes sh{25%{transform:translateX(-9px)}75%{transform:translateX(9px)}}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:4px;background:linear-gradient(90deg,var(--r),var(--g));z-index:6;width:0;transition:width .6s;box-shadow:0 0 12px var(--g)}
+#pl{position:fixed;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:6;display:flex;align-items:center;gap:2px;background:rgba(0,0,0,.65);border:1px solid var(--g);border-radius:40px;padding:3px 8px;backdrop-filter:blur(8px)}
+#pl button{padding:8px 11px;margin:0 1px;font-size:.95rem;box-shadow:none;background:none}
+.eq{display:flex;gap:2px;align-items:flex-end;height:16px;margin:0 4px}.eq i{width:3px;height:4px;background:var(--g);border-radius:2px}
+.eq.pp i{animation:eq .8s infinite alternate}.eq.pp i:nth-child(2){animation-delay:.25s}.eq.pp i:nth-child(3){animation-delay:.5s}
+@keyframes eq{to{height:16px}}
+.nav{display:flex;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.dots{display:flex;gap:6px;margin:14px 0 4px;justify-content:center}.dots i{width:9px;height:9px;border-radius:50%;background:#ffffff33}.dots i.a{background:var(--g);box-shadow:0 0 10px var(--g)}
+.ex{min-height:70px;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+.clock{width:64px;height:64px;border:3px solid var(--g);border-radius:50%;position:relative;box-shadow:0 0 20px var(--r)}.clock:before,.clock:after{content:"";position:absolute;left:50%;bottom:50%;width:3px;background:#fff;transform-origin:bottom;border-radius:2px}
+.clock:before{height:22px;animation:rot 6s linear infinite}.clock:after{height:15px;animation:rot 72s linear infinite}@keyframes rot{to{transform:rotate(360deg)}}
+.bub{background:var(--r);border-radius:16px 16px 16px 4px;padding:8px 14px;font-size:.9rem;margin:3px;opacity:0;animation:bp .6s forwards}@keyframes bp{from{transform:scale(.4)}to{opacity:1}}
+.moon{width:60px;height:60px;border-radius:50%;box-shadow:inset -14px 0 0 #fff3c4;filter:drop-shadow(0 0 16px #fff3c4)}
+.hh{display:flex;justify-content:space-between;width:230px;position:relative}.hh span{font-size:2.6rem;filter:drop-shadow(0 0 14px var(--r))}.hh span:first-child{animation:ml 3s infinite alternate}.hh span:last-child{animation:mr 3s infinite alternate}.hh:before{content:"";position:absolute;top:50%;left:12%;right:12%;height:3px;background:linear-gradient(90deg,transparent,var(--g),transparent);box-shadow:0 0 14px var(--g)}
+@keyframes ml{to{transform:translateX(70px)}}@keyframes mr{to{transform:translateX(-70px)}}
+.env{width:170px;height:115px;margin:14px auto;background:linear-gradient(135deg,#a00028,var(--r));border-radius:8px;position:relative;cursor:pointer;box-shadow:0 0 34px var(--r);display:flex;align-items:center;justify-content:center;font-size:2.4rem;animation:pl 2s infinite}
+.env:before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent 49%,#0003 50%) ,linear-gradient(to bottom left,transparent 49%,#0003 50%);border-radius:8px}
+.hid{display:none}
+.tl{max-width:560px;width:100%;text-align:left;border-left:2px solid var(--g);margin:14px 0 0 10px;padding-left:18px}
+.tl div{margin:0 0 16px;opacity:0;transform:translateX(-20px);animation:tx .7s forwards}.tl b{color:var(--g);display:block}
+@keyframes tx{to{opacity:1;transform:none}}
+.ph{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:16px;max-width:640px;width:100%;perspective:900px;margin-top:10px}
+.pol{background:#fff;color:#222;padding:8px 8px 26px;border-radius:6px;box-shadow:0 0 20px var(--r);transition:.5s;font-family:'Dancing Script';font-size:1.05rem}
+.pol:nth-child(odd){transform:rotate(-3deg)}.pol:nth-child(even){transform:rotate(3deg)}
+.pol:hover{transform:rotateY(14deg) rotateX(6deg) scale(1.06);box-shadow:0 0 36px var(--g)}
+.pol .im{aspect-ratio:1;border-radius:14px;border:2px solid var(--r);background:#ffe1e7 center/cover;display:flex;align-items:center;justify-content:center;color:#a00028;font:400 .8rem Poppins;margin-bottom:6px;box-shadow:0 0 12px var(--g)}
+.opt{display:block;width:100%;margin:8px 0;text-align:left;background:rgba(255,255,255,.08);border:1px solid #ff405c66;box-shadow:none}
+.big{font-family:'Playfair Display';font-size:clamp(1.6rem,7vw,3rem);text-shadow:0 0 26px var(--r),0 0 50px var(--r);margin:18px 0}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-iteration-count:1!important;transition:none!important}}
+</style></head><body>
+<canvas id="fx"></canvas><div id="bar"></div>
+
+<section class="scr on" id="gate"><p class="script" id="g1" style="opacity:0;transition:2s">Someone has created a little world just for you...</p><h1 id="g2" style="opacity:0;transition:2s">Manthan loves Krushi ❤️</h1>
+<p id="g3" style="opacity:0;transition:2s">Secret password enter karo, Betu 🔐</p><div id="g4" style="opacity:0;transition:2s"><input type="text" id="pw" placeholder="Secret code..." inputmode="text" autofocus autocomplete="off"><br><div id="kp" style="display:grid;grid-template-columns:repeat(3,68px);gap:8px;justify-content:center;margin:14px 0"></div><button id="go">Unlock ❤️</button></div><p id="err" style="color:var(--g);min-height:1.4em"></p></section>
+
+<section class="scr" id="wel"><h1>Welcome to your little world, Betu ❤️</h1><p class="script">Tara mate j banavyu che, bas tara mate...</p><button class="pulse" id="enter">Enter My World 🌹</button></section>
+
+<section class="scr" id="ch"><div class="ex" id="ex"></div><div class="glass" id="card" style="text-align:center"><h2 id="ct"></h2><div id="cb"></div></div><div class="dots" id="dots"></div><div class="nav"><button class="ghost" id="pv">← Pachhi</button><button id="nx">Aagal →</button></div></section>
+
+<section class="scr" id="mem" style="justify-content:flex-start"><h2>FROM BEST FRIENDS TO LOVERS 📸</h2>
+<div class="tl"><div style="animation-delay:.2s"><b>Second-semester practical exam</b>Pehli mulakat.</div><div style="animation-delay:.9s"><b>Practical ni vato</b>Ek bija ne olakhvani shuruaat.</div><div style="animation-delay:1.6s"><b>Instagram connection</b>Regular vato nu beginning.</div><div style="animation-delay:2.3s"><b>Lagbhag ek varsh ni friendship</b>Best friends bani gaya.</div><div style="animation-delay:3s"><b>21 August 2026</b>Aapdi relationship nu beginning ❤️</div></div>
+<div class="ph" id="ph"></div><button id="mn" style="margin-top:22px">Chalo, ek fun game 😈 →</button></section>
+
+<section class="scr" id="qz"><h2>LET’S TEST YOUR JEALOUSY, BETU! 😈</h2><p class="script">Chalo joiye ke tamaro jealousy level ketlo che!</p><div class="glass" id="qb"></div></section>
+
+<section class="scr" id="fin" style="background:#000"><p class="big" id="f1" style="font-size:1.5rem"></p><div class="env hid" id="fe">💌</div>
+<div class="glass hid" id="fl"><p class="script">Betu, mari life ma aavva mate thank you. Tu pehla maro best friend hato, ane e j friendship ma thi aapdo pyaar janmyo — e vaat mane roj special feel karave che.</p><p class="script">Tara love, tari care ane tara efforts mate hu hamesha grateful rahish. Bas mare tari sathe rehvu che, ane tari sathe aava j nana-moda memories banavta rehvu che.</p><p class="script">Hu perfect nathi, pan hu try karu chu ke tane hamesha important feel karavu. Tu mara mate duniya che. 🖤 — Tari Krushi</p><div class="big" id="q">WILL YOU STAY WITH YOUR BACHA FOREVER? ❤️</div><button id="y1">YES, ALWAYS ❤️</button><button id="y2">OF COURSE, KRUSHI! 🥹</button></div>
+<div class="hid" id="end"><div class="big">OUR LITTLE WORLD, OUR LITTLE STORY, OUR FOREVER MEMORIES. 🖤</div><p class="script">From best friends to lovers, our story is my favourite story.</p></div></section>
+
+<script>
+const $=i=>document.getElementById(i),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const PHOTOS=["p1.jpeg","p2.jpeg","p3.jpeg","p4.jpeg","p5.jpeg","p6.jpeg"];          // <-- 5-6 photo paths, e.g. ["p1.jpg","p2.jpg",...]
+const CAP=["Pehli mulakat","Practical vibes","Instagram wala din","Best friends","Aapdi smile","Forever 🖤"];
+/* ---------- effects ---------- */
+const cv=$('fx'),c=cv.getContext('2d');let P=[],mode='heart',W,H;
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}rs();addEventListener('resize',rs);
+function spawn(){if(P.length>(RM?6:48)||mode=='none')return;const m=mode,x=Math.random()*W;
+ const o={x,y:-20,vx:(Math.random()-.5)*.6,vy:.6+Math.random()*1.2,s:12+Math.random()*14,r:Math.random()*6,vr:(Math.random()-.5)*.05,t:m,a:1};
+ if(m=='heart'||m=='love'){o.y=H+20;o.vy=-(.6+Math.random()*1.2)}
+ if(m=='rain'){o.vy=7+Math.random()*4;o.vx=-1;o.s=14}
+ if(m=='star'){o.y=Math.random()*H;o.vy=.05;o.s=1+Math.random()*2.5}
+ if(m=='conf'){o.col=['#E50935','#FF405C','#fff','#ffb3c1'][Math.random()*4|0];o.s=6+Math.random()*6}
+ P.push(o)}
+function burst(x,y){const col=['#FF405C','#E50935','#fff','#ffd1d9'][Math.random()*4|0];for(let i=0;i<(RM?10:38);i++){const a=Math.PI*2*i/38,v=2+Math.random()*3;P.push({t:'spark',x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,a:1,col,s:2})}}
+function loop(){requestAnimationFrame(loop);if(document.hidden)return;c.clearRect(0,0,W,H);if(Math.random()<.35)spawn();
+ for(let i=P.length-1;i>=0;i--){const p=P[i];p.x+=p.vx;p.y+=p.vy;p.r+=p.vr||0;
+  if(p.t=='spark'){p.vy+=.04;p.a-=.014;c.globalAlpha=Math.max(p.a,0);c.fillStyle=p.col;c.fillRect(p.x,p.y,p.s,p.s)}
+  else{c.save();c.translate(p.x,p.y);c.rotate(p.r);c.globalAlpha=p.t=='star'?.4+.6*Math.abs(Math.sin(p.r+performance.now()/600)):.8;
+   if(p.t=='heart'||p.t=='love'){c.font=p.s+'px serif';c.fillStyle='#FF405C';c.shadowColor='#E50935';c.shadowBlur=12;c.fillText('♥',0,0)}
+   else if(p.t=='petal'){c.fillStyle='#E50935';c.beginPath();c.ellipse(0,0,p.s/2,p.s/4,0,0,7);c.fill()}
+   else if(p.t=='rain'){c.strokeStyle='#9bb';c.globalAlpha=.4;c.beginPath();c.moveTo(0,0);c.lineTo(-2,p.s);c.stroke()}
+   else if(p.t=='star'){c.fillStyle='#fff';c.beginPath();c.arc(0,0,p.s,0,7);c.fill()}
+   else if(p.t=='conf'){c.fillStyle=p.col;c.fillRect(0,0,p.s,p.s/2)}
+   c.restore()}
+  if(p.y>H+30||p.y<-40||p.a<=0)P.splice(i,1)}c.globalAlpha=1}loop();
+/* ---------- gate ---------- */
+[['g1',100],['g2',700],['g3',1300],['g4',1600]].forEach(([i,t])=>setTimeout(()=>$(i).style.opacity=1,t));
+function show(id){document.querySelectorAll('.scr').forEach(s=>s.classList.toggle('on',s.id==id))}
+function unlock(){if(['2202','betu bachaa'].includes($('pw').value.trim().toLowerCase().replace(/\s+/g,' '))){mode='love';for(let i=0;i<20;i++)setTimeout(()=>{mode=i%2?'petal':'heart';spawn();spawn()},i*60);setTimeout(()=>{show('wel');mode='petal'},900)}
+ else{$('err').textContent='Ooops Betu, galat password! Fari try karo 🥺';$('pw').classList.remove('shake');void $('pw').offsetWidth;$('pw').classList.add('shake')}}
+$('go').onclick=unlock;$('pw').onkeydown=e=>e.key=='Enter'&&unlock();
+$('kp').innerHTML=['1','2','3','4','5','6','7','8','9','⌫','0','OK'].map(k=>`<button type="button" data-k="${k}" style="padding:0;margin:0;height:54px;font-size:1.2rem">${k}</button>`).join('');
+$('kp').onclick=e=>{const k=e.target.dataset.k;if(!k)return;const p=$('pw');if(k=='OK')unlock();else if(k=='⌫')p.value=p.value.slice(0,-1);else{p.value+=k;if(p.value=='2202')unlock()}};
+$('enter').onclick=()=>{i=0;renderCh();show('ch')};
+/* ---------- chapters ---------- */
+const L=s=>`<p>${s}</p>`,ENV='<div class="env" id="en">💌</div><div class="hid" id="op">';
+const CH=[
+{t:"I Was Before You 🥀",bg:"#000,#1a0006",m:'star',x:'<div class="clock"></div>',b:L("Betu, tane khabar che? Tari life ma aavya pehla hu kevi hati? Life chalti hati — lectures, practicals, roj nu routine. Badhu normal hatu, pan kyak ek nano khalipo hato jena vishe mane pan khabar nahoti.")+L("Pachi aavyu aapdu second-semester nu practical exam. Tyare koi ne khabar nahoti ke ek ordinary exam hall ma ek special person malvano che. Aapde practical ni vato kari, ek bija nu naam puchhyu. Thodi vaar pachi me message karyo ane tu mane Instagram ID puchhi. Bas, etli simple shuruaat — pan aaje samjay che ke e nani vaat thi aakhi story shuru thai gai. 🥀")+L("Kyarek vichaar karu chu ke jo e din aapde vaat j na kari hot to? Pan nahi... lagey che ke aapdi mulakat lakhayeli j hati. Ek nano 'hi' ane ek nano sawal — ane aaje tu mari life no sauthi special part che. ✨")},
+{t:"I Am After You ❤️",bg:"#1a0006,#35000C",m:'heart',x:'<div><span class="bub" style="animation-delay:.3s">Betu 💗</span><span class="bub" style="animation-delay:1.3s">Su kare che?</span><span class="bub" style="animation-delay:2.3s">Miss you ❤️</span></div>',b:L("Tara aavya pachi mari life ma ek navo rang aavyo che. Tari ek message aave ne, mara face par smile aavi j jay che — mood game tevo hoy, pan tara message thi badhu change thai jay che.")+L("Tari sathe vaat karvu mane really khub saru lage che. Tu mari everyday life no special part bani gayo che. Ek vyakti nu ek nanu message pan aakho din saro banavi shake che — e hu tara thi shikhi chu. 💗")+L("Tari saathe vaat karya pachi mane lage che ke mari life ma ek navi warmth aavi che. Ghani vaar hu phone haath ma lau chu bas e joi ne ke tu online che ke nai — ane e nani vaat pan mane smile aapi jay che. 🥰")},
+{t:"I Really Love You 💗",bg:"#35000C,#080808",m:'petal',x:'💌',b:L("Betu, mane khabar nathi ke hu kem samjavu ke tu mara mate ketlo mean kare che. Hu tari badhi vastu ne love karu chu — tari nature, tari caring behaviour, ane tari nani nani vato pan.")+L("Mara biggest dream che ke hu tari sathe rahu ane aapde saathe beautiful memories banavie. Tu j e vyakti che jena sathe mane safe, happy ane potanu feel thay che. Bas mare tari sathe rehvu che. 🌹")+L("Tari sauthi vadhare gamti vastu e che ke tu tara jevo j che — real, caring ane sincere. Mane pehla thi j tari nature e attract kari hati, ane aaje pan e j nature mane roj tara pyaar ma pade che. Betu, I love you, ghanu ghanu. 💗")},
+{t:"I Hurt You So Much 🥺",bg:"#0a0a12,#1a0006",m:'rain',x:'🥀',b:L("Kyarek hu vichaar karu chu ke me tane hurt karyo hase, to mane khub dukh thay che. Ghani vaar hu ro pan padi chu e vichari ne.")+L("Hu jaanu chu ke dareke relationship ma kyarek mushkel moments aave che. Pan mane e pan samjayu che ke tari feelings mara mate ketli important che. Hu ae moments mathi shikhva mangu chu, ane aagal badhu vadhare saru banavva mangu chu. 🥺")+L("Tane pain thayu hoy to mane khabar che ke sorry bolvu bahu nanu lage — pan e dil thi nikde che. Hu aaje pan tara feelings ne sambhaline sunva mangu chu, ane aagal thi vadhare dhyan rakhva mangu chu. Aa chapter ma andhkar che, pan ante ek warm prakash pan che — kem ke aapdo pyaar haju ahiya j che. 🕯️")},
+{t:"I Am So So So Sorry 💌",bg:"#2a0010,#080808",m:'petal',x:'',b:'<p class="script" style="text-align:center">Aa letter tara mate che... Envelope khol 👇</p>'+ENV+L("Dear Betu,")+L("Hu dil thi sorry kahu chu. Mane kyarey nathi joiti ke mara thi tane unimportant feel thay. Tari feelings mara mate khub matter kare che.")+L("Mane aapde ek bija sathe saari rite vaat kari ne, ek bija ne samjie — e j joiye che. Ane mane aapde saathe haju ghani beautiful memories banavi che. Mane tari saathe vaat karvu che — chup rehva ne badle, open thai ne. Jyare kai mushkel lage tyare aapde ek bija ne kahie, samjie, ane saathe solve karie. Tari ek ek feeling mara mate real che, ane hu tane kyarey unimportant feel nai karava dau, e mari koshish che. Sorry, mara Bachaa. 💌")+'</div>'},
+{t:"Thank You So Muchhh 🥹",bg:"#12000a,#080808",m:'star',x:'⭐',b:L("Betu, thank you tara love mate. Thank you tari care mate — tu jem mari fikar kare che ne, e mane roj feel thay che.")+L("Thank you tara efforts mate, tari understanding mate, ane mari life ma hovā mate. Tu hamesha mane samji ne chalyo che, ane e vaat mara mate ghani special che. Dil thi aabhar, mara Betu. 🥹")+L("Tu pehla mara best friend hato, ane pachi mari life no sauthi special vyakti. Tari presence j mane strong banave che. Jyare pan hu tane thank you kahu chu, e fakt shabdo nathi — e mara dil no ek nano hissho che. Thank you for everything, Betu. 🌟")},
+{t:"You Should Thank Me Too 😎",bg:"#35000C,#1a1a1a",m:'conf',x:'😎',b:L("Hmm Betu... thodu to tame pan mane thank you kaho! Tame lucky cho ke tamne hu malyi! Tamara boring days kon interesting banave che? Tamara drama kon tolerate kare che? Tamne etlu attention kon aape che? Tamaro favourite headache kon? 😏")+L("Aaje mare aa kahevu j padshe: Betu, tame bahu lucky cho! Pan chalo, hu pan thodi lucky chu — kem ke mane tara jevo best friend ane boyfriend malyo. Fakt aa vaat bahu loud na bolta, nai to tamne ego aavi jase! 😂")+'<div id="fb"><button id="b1">YES, I AM LUCKY 😂</button><button id="b2">OBVIOUSLY, MY BACHA! 😎</button></div><p class="script" id="fr" style="text-align:center"></p>'},
+{t:"We Are Perfect For Each Other 🖤",bg:"#080808,#35000C",m:'heart',x:'<div class="hh"><span>❤️</span><span>🖤</span></div>',b:L("Mane lage che ke Manthan mara mate perfect che. Pan sachi vaat e che ke koi pan perfect nathi hotu — jaruri che understanding, care, trust ane efforts. E badhu tara ma che.")+L("Aapdi friendship thi start thayeli aa journey mara mate khub special che. Pehla best friends, pachi lovers — ane haju aapdi story ghani lambi che. 🖤")+L("Aapde bey alag chie, pan ek bija ne samjie chie. 21 August 2026 e din aapde friendship thi ek step aagal gaya — ane ae step ne hu mari life no sauthi saaro decision gaṇu chu. Tu mara mate perfect che, Betu. 🖤")},
+{t:"I Miss You So Much 😭",bg:"#050514,#0b0b22",m:'rain',x:'<div class="moon"></div>',b:L("Hu tane all the time miss karu chu — ordinary moments ma pan. Kyarek chai pitā, kyarek bas bethi hoy tyare, achanak tara yaad aavi jay che.")+L("Tari sathe vaat karvu mane khub gamey che. Tara messages mane khush kari de che. Kyarek hu shant thai ne bas tari rah joi rahi hoy chu... ane jyare tu message kare, tyare badhu pachu saru lage che. 🌙")+L("Kyarek raat ma, jyare badhu shant hoy, tyare tara vichaar vadhare aave che. Hu bas ek j vastu icchu chu — tu mari pase hoy, ke pachi tari ek voice, ek message. Betu, hu tane bahu bahu miss karu chu. 💫")},
+{t:"I Never Want To Lose You ❤️",bg:"#35000C,#7a1a00",m:'heart',x:'❤️‍🔥',b:L("Mara biggest dream che ke hu tari sathe rahu. Saathe rehvu, ek bija ne samajvu, ek bija ne support karvu, ane saathe grow karvu — e j mare joiye che.")+L("Hu koi moti guarantee nathi aapti, pan hu promise karu chu ke hu try karish — ke aapde ek bija ne kyarey taken for granted na laie, ane roj nava memories banavie. Betu, tu mara mate bahu special che. ❤️")+L("Hu tane aaje, kale ane aavta badha divaso ma pan aaj rite choose karva mangu chu. Tari sathe maru future joi ne mane hope ane khushi bane lage che. Chalo, saathe sapna jovie ane saathe pura karie. ❤️"),fw:1}];
+let i=0;
+function renderCh(){const d=CH[i];$('ct').textContent=d.t;$('cb').innerHTML=d.b;$('ex').innerHTML=d.x||'';$('ch').style.background=`radial-gradient(circle at 50% 0,${d.bg.split(',')[1]},${d.bg.split(',')[0]} 75%)`;mode=d.m;
+ $('dots').innerHTML=CH.map((_,k)=>`<i class="${k==i?'a':''}"></i>`).join('');$('bar').style.width=(i+1)*10+'%';$('pv').style.visibility=i?'visible':'hidden';
+ $('card').style.animation='none';void $('card').offsetWidth;$('card').style.animation='';
+ const en=$('en');if(en)en.onclick=()=>{en.style.display='none';$('op').classList.remove('hid');$('op').classList.add('script')};
+ if($('b1')){const r=["Haa Betu, tu lucky j che! 😂 Mane to khabar j hati!","Obviously! Aa vaat to maru dil pan jaane che 😎❤️"];$('b1').onclick=()=>{$('fr').textContent=r[0];mode='conf'};$('b2').onclick=()=>{$('fr').textContent=r[1];for(let k=0;k<30;k++)spawn()}}
+ if(d.fw)for(let k=0;k<4;k++)setTimeout(()=>burst(W*(.2+Math.random()*.6),H*(.2+Math.random()*.3)),600*k)}
+$('nx').onclick=()=>{if(i<9){i++;renderCh()}else{mode='heart';show('mem');loadPh()}};
+$('pv').onclick=()=>{i--;renderCh()};
+/* ---------- memories ---------- */
+function loadPh(){$('ph').innerHTML=CAP.map((t,k)=>`<div class="pol"><div class="im" style="${PHOTOS[k]?`background-image:url('${PHOTOS[k]}')`:''}">${PHOTOS[k]?'':'📷 Photo '+(k+1)}</div>${t}</div>`).join('')}
+$('mn').onclick=()=>{mode='heart';Q=0;S=0;quiz();show('qz')};
+/* ---------- quiz ---------- */
+const QS=[["Jo koi bija boy Krushi ne compliment kare, to tame kevi reaction aapso?",["Smile karish, mari Krushi j best che 😌",["Hmm... koun che e? 🤨"],"Silently note karish ke kon hato 👀","Compliment ni jagya e khud aavi jaish 😈"]],
+["Koi boy Krushi ne Instagram message kare, to jealousy thay?",["Bilkul nahi, mane trust che ❤️","Thodu curious thaish 🤭","Hu check karish ke e kon che 😏","Account hu j sambhalish 😂"]],
+["Krushi bija boy sathe vaat kare, to upset thaso ke trust karso?",["Full trust, mari Krushi che 🥰","Trust, pan thodu dil ma 🤏","Trust, pan mood off thai jay 😤","Mara sivay koi sathe nai! 😈"]],
+["Koi boy Krushi sathe rude behave kare ke shout kare, to?",["Calmly Krushi ne support karish 🤝","Gusso aavshe, pan shant rahish 😠","Seedhu bolish: tameez rakho! 😡","Aa to full drama thaase! 🔥"]],
+["Sacchu kaho, cool dekhao pan secretly jealous cho?",["Na re, pure cool chu 😎","Kyarek kyarek 🤭","Haa, thodu secretly 👑","Haaa, bahu! Pan cute rite 😈"]]];
+let Q=0,S=0;
+const R=[["Sweet and Trusting Boyfriend ❤️","Tame to pure trust na raja cho!"],["Little Bit Jealous 🤭","Thodi jealousy, ghani badhi trust!"],["Secretly Jealous King 👑","Cool dekhao cho, pan andar thi jealous cho!"],["Full Drama King 😈","Tamaro drama level... legendary! 😂"]];
+function quiz(){const q=QS[Q];$('qb').innerHTML=`<p class="script" style="text-align:center">Question ${Q+1}/5</p><h2 style="font-size:1.2rem">${q[0]}</h2>`+q[1].map((o,k)=>`<button class="opt" data-k="${k}">${Array.isArray(o)?o[0]:o}</button>`).join('');
+ $('qb').querySelectorAll('.opt').forEach(b=>b.onclick=()=>{S+=+b.dataset.k;Q++;Q<5?quiz():result()})}
+function result(){const r=R[Math.min(3,Math.floor(S/3.8))];mode='conf';
+ $('qb').innerHTML=`<p>Tamaro result:</p><h2>${r[0]}</h2><p style="text-align:center">${r[1]}</p><p class="script" style="text-align:center">Final title: <b>Full Possessive Drama King 😈👑</b></p><p class="script" style="text-align:center">Betu, trust is our superpower, but thodi jealousy toh cute che! 😂❤️</p><button id="lt">Ek last vaat... 💌</button>`;$('lt').onclick=final}
+/* ---------- final ---------- */
+function final(){mode='none';show('fin');const t=$('f1');t.style.cssText='opacity:0;transition:2s';t.textContent='Betu... Wait! One last thing...';
+ setTimeout(()=>t.style.opacity=1,500);setTimeout(()=>{t.style.opacity=0},4000);setTimeout(()=>{t.style.display='none';$('fe').classList.remove('hid');mode='heart'},5500)}
+$('fe').onclick=()=>{$('fe').classList.add('hid');$('fl').classList.remove('hid');mode='petal'};
+function yes(){$('fl').classList.add('hid');$('end').classList.remove('hid');mode='conf';let n=0;const t=setInterval(()=>{burst(W*(.15+Math.random()*.7),H*(.15+Math.random()*.4));if(++n>40)clearInterval(t)},450);setInterval(()=>{if(mode=='conf')mode='heart';else if(mode=='heart')mode='petal';else mode='conf'},4000)}
+$('y1').onclick=yes;$('y2').onclick=yes;
+</script></body></html>
